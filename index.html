@@ -3,17 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>תפריט הבר</title>
+    <title>קפה אפרת - תפריט אוכל</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>תפריט הבר</h1>
-</header>
 
-<main id="menu-container">
-    <!-- כאן נכניס בהמשך את הקטגוריות והמנות -->
-</main>
+<div class="menu-card">
+    <header class="header">
+        <h1 class="logo">קפה<span class="heart">♥</span>אפרת</h1>
+        <!-- סרגל ניווט בין הדפים -->
+        <nav class="menu-nav">
+            <a href="index.html" class="nav-btn active">אוכל</a>
+            <a href="drinks.html" class="nav-btn">שתייה</a>
+        </nav>
+    </header>
+
+    <main class="menu-content">
+
+        <!-- קטגוריה: נשנושים ליד היין -->
+        <section class="section">
+            <div class="category-badge">נשנושים ליד היין</div>
+            <div class="menu-item">
+                <span class="item-name">זיתים מעורבים <span class="desc">- מתובלים בשמן זית ועשבי תיבול</span></span>
+                <span class="dots"></span>
+                <span class="price">18 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">בוטנים בתיבול הבית <span class="desc">- קלייה ביתית פריכה</span></span>
+                <span class="dots"></span>
+                <span class="price">16 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">צלחת חריפים <span class="desc">- מבחר חריפים טריים ובגריל</span></span>
+                <span class="dots"></span>
+                <span class="price">32 ₪</span>
+            </div>
+        </section>
+
+        <!-- קטגוריה: לחמים, גבינות ומטבלים -->
+        <section class="section">
+            <div class="category-badge">לחמים, גבינות<br>ומטבלים</div>
+            <div class="menu-item">
+                <span class="item-name">פוקאצ'ה לוהטת <span class="desc">- מוגשת עם שמן זית בלסמי</span></span>
+                <span class="dots"></span>
+                <span class="price">26 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">לחם מחמצת דגנים <span class="desc">- בליווי טחינה ביתית</span></span>
+                <span class="dots"></span>
+                <span class="price">28 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">ציזיקי ביתי <span class="desc">- יוגורט, שמיר, שום ושמן זית</span></span>
+                <span class="dots"></span>
+                <span class="price">26 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">פלטת גבינות</span>
+                <span class="dots"></span>
+                <span class="price">74 ₪</span>
+            </div>
+        </section>
+
+        <!-- קטגוריה: רעננים -->
+        <section class="section">
+            <div class="category-badge">רעננים</div>
+            <div class="menu-item">
+                <span class="item-name">סלט סלק עדין <span class="desc">- בתיבול לימון, שמן זית ופטרוזיליה טרייה</span></span>
+                <span class="dots"></span>
+                <span class="price">28 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">סלט כרוב וחמוציות <span class="desc">- מתובל וויניגרט הבית</span></span>
+                <span class="dots"></span>
+                <span class="price">28 ₪</span>
+            </div>
+        </section>
+
+        <!-- קטגוריה: חמים & מיוחדים -->
+        <section class="section">
+            <div class="category-badge">חמים & מיוחדים</div>
+            <div class="menu-item">
+                <span class="item-name">קציצות זוקיני ופטה <span class="desc">- 4 יח' אפויות על מצע ציזיקי ביתי</span></span>
+                <span class="dots"></span>
+                <span class="price">42 ₪</span>
+            </div>
+            <div class="menu-item multiline">
+                <span class="item-name">סרדינים/אנשובי/מקרל מפורטוגל<br><span class="desc">קופסת איכות לבחירה מהמדף</span></span>
+                <span class="dots"></span>
+                <span class="price">45 ₪</span>
+            </div>
+        </section>
+
+        <!-- קטגוריה: משהו מתוק לסיום -->
+        <section class="section">
+            <div class="category-badge">משהו מתוק לסיום</div>
+            <div class="menu-item">
+                <span class="item-name">עוגת גבינה קלאסית</span>
+                <span class="dots"></span>
+                <span class="price">36 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">עוגת גזר ומסקרפונה</span>
+                <span class="dots"></span>
+                <span class="price">36 ₪</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">עוגיית "אמסטרדם" חמה <span class="desc">- שוקולדית ופריכה</span></span>
+                <span class="dots"></span>
+                <span class="price">28 ₪</span>
+            </div>
+        </section>
+
+    </main>
+</div>
 
 <script src="script.js"></script>
 </body>

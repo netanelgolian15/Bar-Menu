@@ -1,0 +1,155 @@
+:root {
+    --primary-teal: #1f7b8c;
+    --heart-red: #c0392b;
+    --bg-cream: #fbf7ee;
+    --text-dark: #1f7b8c;
+    --card-border: #bcd3d6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #e9eff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 10px;
+}
+
+.menu-card {
+    background-color: var(--bg-cream);
+    width: 100%;
+    max-width: 550px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 8px solid var(--card-border);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    color: var(--primary-teal);
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.logo .heart {
+    color: var(--heart-red);
+    margin: 0 4px;
+    font-size: 2.2rem;
+    vertical-align: middle;
+}
+
+/* סרגל ניווט תפריטים */
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--primary-teal);
+    border: 2px solid var(--primary-teal);
+    padding: 6px 25px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+}
+
+.nav-btn.active, .nav-btn:hover {
+    background-color: var(--primary-teal);
+    color: var(--bg-cream);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.category-badge {
+    border: 2px solid var(--primary-teal);
+    color: var(--primary-teal);
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 4px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 18px;
+    background-color: transparent;
+    line-height: 1.2;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: var(--primary-teal);
+    font-weight: 700;
+}
+
+.menu-item.multiline {
+    align-items: flex-end;
+}
+
+.item-name {
+    white-space: nowrap;
+}
+
+.desc {
+    font-weight: 600;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 3px dotted var(--primary-teal);
+    margin: 0 8px;
+    position: relative;
+    top: -4px;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/* התאמה לרשתות ומובייל */
+@media (max-width: 480px) {
+    .menu-card {
+        padding: 25px 15px;
+        border-width: 5px;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .menu-item {
+        font-size: 0.95rem;
+    }
+
+    .item-name {
+        white-space: normal;
+    }
+}
