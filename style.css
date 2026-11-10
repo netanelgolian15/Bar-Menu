@@ -112,11 +112,16 @@ body {
 }
 
 .item-name {
-    white-space: nowrap;
+    white-space: normal;
+    display: inline-block;
 }
-
 .desc {
-    font-weight: 600;
+    display: block;
+    font-weight: 400;
+    font-size: 0.82rem;
+    line-height: 1.3;
+    opacity: 0.9;
+    margin-top: 3px;
 }
 
 .dots {
@@ -140,12 +145,6 @@ body {
     opacity: 0.85;
 }
 
-.desc {
-    font-weight: 400;
-    font-size: 0.82rem;
-    display: inline-block;
-    margin-top: 2px;
-}
 
 /* התאמה לרשתות ומובייל */
 @media (max-width: 480px) {
