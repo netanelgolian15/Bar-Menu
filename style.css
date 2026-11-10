@@ -44,13 +44,18 @@ body {
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
 
-.logo .heart {
+.heart-icon {
+    width: 2.6rem;
+    height: 2.6rem;
     color: var(--heart-red);
-    margin: 0 4px;
-    font-size: 2.2rem;
     vertical-align: middle;
+    filter: drop-shadow(0 2px 4px rgba(192, 57, 43, 0.2));
 }
 
 /* סרגל ניווט תפריטים */
@@ -165,5 +170,13 @@ body {
 
     .item-name {
         white-space: normal;
+    }
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .heart-icon {
+        width: 2.1rem;
+        height: 2.1rem;
     }
 }
