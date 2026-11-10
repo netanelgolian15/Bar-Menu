@@ -134,6 +134,19 @@ body {
     direction: ltr;
 }
 
+.origin {
+    font-weight: 600;
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 0.82rem;
+    display: inline-block;
+    margin-top: 2px;
+}
+
 /* התאמה לרשתות ומובייל */
 @media (max-width: 480px) {
     .menu-card {
